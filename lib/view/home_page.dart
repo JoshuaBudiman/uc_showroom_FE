@@ -10,9 +10,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int selectedIndex = 0;
   final screen = [
-    VehiclesPage(),
-    CustomersPage(),
-    OrdersPage()
+    const VehiclesPage(),
+    const CustomersPage(),
+    const OrdersPage()
   ];
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
           
         },
         items: 
-      [
+      const [
         BottomNavigationBarItem(icon: Icon(Icons.airport_shuttle), label: 'Kendaraan'),
         BottomNavigationBarItem(icon: Icon(Icons.person_outline), label: 'Pelanggan'),
         BottomNavigationBarItem(icon: Icon(Icons.shop_sharp), label: 'Order'),
